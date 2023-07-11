@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 200px;
+    grid-template-rows: 80px 3fr;
+    grid-template-areas: 
+    "menu navbar"
+    "sidebar main"
+    "sidebar footer";
+   /* display: grid;
+    border: 1px solid;
+    grid-template: 
+    "logo navbar navbar navbar" 50px
+    "sidebar . main main" 700px
+    "footer footer footer footer" 80px
+    / 1fr 1fr 1fr 1fr */
+}
+
+
+
+.logo{
+    margin-top: 10%;
+    flex-shrink: 0;
+    margin-left: 4%;
+    grid-area: menu;
+    cursor: pointer;
+}
+.search{
+    width: 348px;
+    height: 40px;
+    flex-shrink: 0;
+    display: inline;
+    margin-left: 25%;
+    cursor: pointer;
+}
+#lupa{
+   margin-left: 103%;
+   margin-top: -10%;
+   display: flex;
+   ;
+    
+}
+.right{
+    margin-top: -3%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+#perfil{
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    display: flex;
+}
+
+nav{
+    margin-top: 1%;
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar{
+    display: flex;
+    width: 218px;
+    height: 968px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    flex-shrink: 0;
+    background: #FFF;
+    cursor: pointer;
+    grid-area: sidebar;
+}
+
+main{
+    cursor: pointer;
+    grid-area: main;
+}
